@@ -8,11 +8,13 @@ import { AppComponent } from './app.component';
 import {IdesModule} from "./ides_module/ides.module";
 import { ContentCardsComponent } from './content-cards/content-cards.component';
 import {ContentService} from "./content.service";
+import {CardComponent} from "./content-cards/card.component";
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContentCardsComponent
+    ContentCardsComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
