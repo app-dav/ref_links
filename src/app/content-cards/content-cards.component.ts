@@ -18,6 +18,6 @@ export class ContentCardsComponent implements OnInit {
     this.content = this.contentService.getContent();
   }
 
-
+  tbFun(index, item){ return item.id;}
 
 }

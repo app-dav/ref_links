@@ -1,8 +1,9 @@
 /**
  * Created by appel on 3/12/2017.
  */
-import {Component} from "@angular/core";
+import {Component, Input} from "@angular/core";
 import {ContentCard} from "./content-card";
+import {MdCard} from "@angular/material";
 
 @Component({
   moduleId: module.id,
@@ -10,9 +11,9 @@ import {ContentCard} from "./content-card";
   selector: 'card'
 })
 
-export class CardComponent{
-  constructor(private readonly contentCard: ContentCard){
-  }
+export class CardComponent extends MdCard{
 
+  @Input()
+  public contentCard: ContentCard;
 }
 

@@ -1,3 +1,6 @@
-<p>
-  content-cards works!
-</p>
+<div>
+ <div *ngFor="let c of content; let i = index; trackBy: tbFun" >
+   <card [contentCard]=c></card>
+ </div>
+
+</div>
