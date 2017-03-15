@@ -5,11 +5,11 @@ import { HttpModule } from '@angular/http';
 import {MaterialModule} from "@angular/material";
 
 import { AppComponent } from './app.component';
-import {IdesModule} from "./ides_module/ides.module";
 import { ContentCardsComponent } from './content-cards/content-cards.component';
-import {ContentService} from "./content.service";
+import {MainContentService} from "./services/main-content.service";
 import {CardComponent} from "./content-cards/card.component";
-import {IdesService} from "./ides_module/ides.service";
+import {IdesService} from "./services/ides.service";
+import {LanguagesService} from "./services/language.service";
 
 @NgModule({
   declarations: [
@@ -21,10 +21,9 @@ import {IdesService} from "./ides_module/ides.service";
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterialModule,
-    IdesModule
+    MaterialModule
   ],
-  providers: [ ContentService, IdesService],
+  providers: [ MainContentService, IdesService, LanguagesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

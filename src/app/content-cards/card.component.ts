@@ -6,8 +6,7 @@ import {ContentCard} from "../models/content-card";
 import {MdCard} from "@angular/material";
 
 @Component({
-  moduleId: module.id,
-  templateUrl: 'card.html',
+  templateUrl: './card.html',
   selector: 'card'
 })
 

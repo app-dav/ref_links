@@ -1,5 +1,6 @@
 import {ContentChild} from "@angular/core";
 import {ContentCard} from "./content-card";
+import {cardContentTypes} from "../services/enum.service";
 /**
  * Created by appel on 3/14/2017.
  */
@@ -16,4 +17,6 @@ export class IntegratedDevelopmentEnvironment extends  ContentCard{
   ){
     super(name, description, id, url, images)
   }
+
+  getType(): cardContentTypes { return cardContentTypes.ides; }
 }
