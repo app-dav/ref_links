@@ -1,7 +1,7 @@
 <div class="card-container">
  <div *ngFor="let c of content; let i = index; trackBy: tbFun" class="card">
    <div >
-     <card [contentCard]=c></card>
+     <card [contentCard]=c  (selectedContent)="changeContent($event)"></card>
    </div>
  </div>
 </div>

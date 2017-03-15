@@ -9,8 +9,8 @@ export class IdesService{
 
   public getIdes(): Array<IntegratedDevelopmentEnvironment>{
     return [
-      new IntegratedDevelopmentEnvironment("Visual Studio", "IDE from Microsoft", null, null,null),
-      new IntegratedDevelopmentEnvironment("Webstorm", "Javascript IDE from JetBrains", null, null,null)
+      new IntegratedDevelopmentEnvironment("Visual Studio", "IDE from Microsoft",1, null, null,null),
+      new IntegratedDevelopmentEnvironment("Webstorm", "Javascript IDE from JetBrains",2, null, null,null)
     ];
   }
 }

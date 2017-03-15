@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ContentService} from "../content.service";
 import {ContentCard} from "../models/content-card";
+import {IdesService} from "../ides_module/ides.service";
 
 
 @Component({
@@ -10,9 +11,10 @@ import {ContentCard} from "../models/content-card";
 })
 export class ContentCardsComponent implements OnInit {
 
-  constructor(readonly contentService: ContentService) { }
-
   content: Array<ContentCard>;
+
+  constructor(readonly contentService: ContentService,
+  readonly idesService: IdesService ) { }
 
   ngOnInit() {
     this.content = this.contentService.getContent();
@@ -20,4 +22,7 @@ export class ContentCardsComponent implements OnInit {
 
   tbFun(index, item){ return item.id;}
 
+  changeContent(event: any){
+    this.content = this.idesService.getIdes();
+  }
 }
