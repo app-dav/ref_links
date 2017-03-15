@@ -9,6 +9,7 @@ import {IdesModule} from "./ides_module/ides.module";
 import { ContentCardsComponent } from './content-cards/content-cards.component';
 import {ContentService} from "./content.service";
 import {CardComponent} from "./content-cards/card.component";
+import {IdesService} from "./ides_module/ides.service";
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import {CardComponent} from "./content-cards/card.component";
     MaterialModule,
     IdesModule
   ],
-  providers: [ ContentService],
+  providers: [ ContentService, IdesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -3,7 +3,7 @@
  */
 import {Injectable} from '@angular/core';
 
-import {ContentCard} from './content-cards/content-card';
+import {ContentCard} from './models/content-card';
 
 Injectable()
 export class ContentService{

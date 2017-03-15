@@ -1,2 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~@angular/material/core/theming/prebuilt/deeppurple-amber.css';
+@import '~@angular/material/core/theming/prebuilt/indigo-pink.css';
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+@import 'https://fonts.googleapis.com/icon?family=Roboto';
+
+body{
+  font-family: Roboto;
+}
+
+.card_bottom_border{
+  border-bottom: 1px solid gray;
+}
+
+.card {
+  width: 200px;
+  height: 400px;
+  flex: 0 1 auto;
+  margin: 20px;
+}
+
+.card-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card-override_skip{
+  color: white!important;
+  background-color: gray!important;
+}

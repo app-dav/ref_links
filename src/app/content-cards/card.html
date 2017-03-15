@@ -1,6 +1,10 @@
-<md-card>
-  <md-card-header>
-    <md-card-title>{{contentCard.name}}</md-card-title>
+<md-card class="card-override">
+  <md-card-header class="card_bottom_border">
+    <span md-card-title>{{contentCard.name}}</span>
   </md-card-header>
   <md-card-content>{{contentCard.description}}</md-card-content>
+  <md-card-actions>
+    <a md-raised-button color="accent"> Button</a>
+    <a md-fab color="primary"><md-icon>check</md-icon></a>
+  </md-card-actions>
 </md-card>

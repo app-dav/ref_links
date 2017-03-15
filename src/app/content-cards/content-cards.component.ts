@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ContentService} from "../content.service";
-import {ContentCard} from "./content-card";
+import {ContentCard} from "../models/content-card";
 
 
 @Component({

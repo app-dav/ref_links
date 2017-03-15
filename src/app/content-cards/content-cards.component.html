@@ -1,6 +1,7 @@
-<div>
- <div *ngFor="let c of content; let i = index; trackBy: tbFun" >
-   <card [contentCard]=c></card>
+<div class="card-container">
+ <div *ngFor="let c of content; let i = index; trackBy: tbFun" class="card">
+   <div >
+     <card [contentCard]=c></card>
+   </div>
  </div>
-
 </div>
