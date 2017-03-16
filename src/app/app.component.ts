@@ -8,5 +8,4 @@ import {ContentCardsComponent} from "./content-cards/content-cards.component";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
 }

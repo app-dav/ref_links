@@ -8,8 +8,7 @@ export class Language extends ContentCard {
               readonly id: number,
               readonly url: string,
               readonly images: Array<any>) {
-    super(name, description,id, url, images);
+    super(name, description,id, url, images, cardContentTypes.languages);
   }
 
-  getType(): cardContentTypes { return cardContentTypes.languages; }
 }

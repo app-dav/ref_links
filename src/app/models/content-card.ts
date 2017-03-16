@@ -9,8 +9,9 @@ constructor(readonly name: string,
             readonly description: string,
             readonly id: number,
             readonly url: string,
-            readonly images: Array<any>
+            readonly images: Array<any>,
+            readonly type? : cardContentTypes
 ){}
 
-  getType(): cardContentTypes { return cardContentTypes.main; }
+  getType(): cardContentTypes { return this.type ?  this.type : cardContentTypes.main; }
 }

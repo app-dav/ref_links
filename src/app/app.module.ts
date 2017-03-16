@@ -10,6 +10,7 @@ import {MainContentService} from "./services/main-content.service";
 import {CardComponent} from "./content-cards/card.component";
 import {IdesService} from "./services/ides.service";
 import {LanguagesService} from "./services/language.service";
+import {ContentMappingService} from "./services/content-mapping.service";
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import {LanguagesService} from "./services/language.service";
     HttpModule,
     MaterialModule
   ],
-  providers: [ MainContentService, IdesService, LanguagesService],
+  providers: [ MainContentService, IdesService, LanguagesService, ContentMappingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

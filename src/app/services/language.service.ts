@@ -14,7 +14,9 @@ export class LanguagesService{
       new Language("Node", "Javascript server-side language", 3 , null, null),
       new Language("JavaScript", "Extremely Popular language", 4 , null, null),
       new Language("Elm", "Functional language", 5 , null, null),
-      new Language("TypeScript", "Superset of Javascript", 6 , null, null)
+      new Language("TypeScript", "Superset of Javascript", 6 , null, null),
+      new Language("CSS", "Styling and formatting for the web", 6 , null, null),
+      new Language("HTML", "The structural language of the web", 6 , null, null)
     ];
   }
 }

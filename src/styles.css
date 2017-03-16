@@ -1,10 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~@angular/material/core/theming/prebuilt/indigo-pink.css';
+@import '~@angular/material/core/theming/prebuilt/pink-bluegrey.css';
 @import 'https://fonts.googleapis.com/icon?family=Material+Icons';
 @import 'https://fonts.googleapis.com/icon?family=Roboto';
 
 body{
   font-family: Roboto;
+  background-color: whitesmoke;
+background: Url('assets/73.jpg');
+}
+
+header{
+  padding: 0;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+ /* background: Url('assets/73.jpg') ; */
+}
+
+.top_content{
+  text-align: center;
+  color: dimgray;
+}
+
+.app_content{
+  background-color: whitesmoke;
+  margin-right: 3%;
+  margin-left: 3%;
+
 }
 
 .card_bottom_border{
@@ -15,7 +37,7 @@ body{
   width: 200px;
   height: 400px;
   flex: 0 1 auto;
-  margin: 20px;
+  margin: 40px;
 }
 
 .card-container{
@@ -24,7 +46,5 @@ body{
   flex-wrap: wrap;
 }
 
-.card-override_skip{
-  color: white!important;
-  background-color: gray!important;
+.card-override{
 }

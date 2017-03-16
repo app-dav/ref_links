@@ -18,13 +18,13 @@ export class ContentCardsComponent implements OnInit {
   constructor(readonly contentMappingSvc: ContentMappingService) { }
 
   ngOnInit() {
-    this.content = this.contentMappingSvc.getMappedContent(null);
+    this.content = this.contentMappingSvc.getMappedContent(new ContentCard(null,null,null,null,null));
   }
 
   tbFun(index, item){ return item.id;}
 
   changeContent(card: ContentCard){
-    this.content =this.contentMappingSvc.getMappedContent(card)
+    this.content = this.contentMappingSvc.getMappedContent(card)
   }
 
 }
